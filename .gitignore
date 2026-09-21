@@ -1,0 +1,10 @@
+# Gradle build outputs and local cache
+/build/
+.gradle/
+
+# IntelliJ IDEA local configuration files
+.idea/
+payment.iml
+
+# Sensitive local configuration files (prevent real passwords or keys from leaking to GitHub)
+#src/main/resources/application.yml

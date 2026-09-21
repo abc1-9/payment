@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: payment
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ---?userSSL=false&serverTimezone=UTC&characterEncoding=utf8
+    username: ---
+    password: ---
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html # Customize the access path of the Swagger interface
+    tags-sorter: alpha   # The sorting rule for the interface list is alphabetical order.
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # Enable automatic mapping of underline to camel case
