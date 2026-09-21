@@ -1,0 +1,65 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.0'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.fintech'
+version = '0.0.1-SNAPSHOT'
+description = 'payment'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Spring Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    // MySQL
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // MyBatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+
+    // Redisson
+    implementation 'org.redisson:redisson-spring-boot-starter:3.51.0'
+
+    // RabbitMQ
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // SpringDoc OpenAPI UI
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
+
+    // Explicitly introduce the MyBatis-Plus core package (to solve the problem of not being able to find StringUtils)
+    implementation 'com.baomidou:mybatis-plus-core:3.5.5'
+    // Introduce the MyBatis-Plus extension package (to solve the problem of not being able to find ServiceImpl and IService)
+    implementation 'com.baomidou:mybatis-plus-extension:3.5.5'
+    // MyBatis-Plus Code Generator
+    implementation 'com.baomidou:mybatis-plus-generator:3.5.5'
+
+    // Freemarker (The code generator needs it to render the template.)
+    implementation 'org.freemarker:freemarker'
+
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
