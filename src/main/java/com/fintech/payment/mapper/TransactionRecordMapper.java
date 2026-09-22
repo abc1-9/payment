@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * Transaction Record Statement Table Mapper 接口
+ * Transaction Record Statement Table Mapper
  * </p>
  *
  * @author Liping Wang

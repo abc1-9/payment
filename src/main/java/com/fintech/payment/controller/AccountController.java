@@ -1,7 +1,8 @@
 package com.fintech.payment.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -11,8 +12,9 @@ import org.springframework.stereotype.Controller;
  * @author Liping Wang
  * @since 2026-09-21
  */
-@Controller
-@RequestMapping("/account")
+@RestController
+@RequestMapping("/api/v1/accounts")
+@RequiredArgsConstructor
 public class AccountController {
 
 }

@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * User Account Balance Table Mapper 接口
+ * User Account Balance Table Mapper
  * </p>
  *
  * @author Liping Wang

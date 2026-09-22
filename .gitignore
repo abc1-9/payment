@@ -7,4 +7,4 @@
 payment.iml
 
 # Sensitive local configuration files (prevent real passwords or keys from leaking to GitHub)
-#src/main/resources/application.yml
+src/main/resources/application.yml

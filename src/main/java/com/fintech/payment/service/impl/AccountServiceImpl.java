@@ -4,6 +4,7 @@ import com.fintech.payment.entity.Account;
 import com.fintech.payment.mapper.AccountMapper;
 import com.fintech.payment.service.IAccountService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
  * @since 2026-09-21
  */
 @Service
+@RequiredArgsConstructor
 public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements IAccountService {
 
 }

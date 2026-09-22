@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>
- * Payment Order Table Mapper 接口
+ * Payment Order Table Mapper
  * </p>
  *
  * @author Liping Wang
